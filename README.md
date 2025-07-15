@@ -88,3 +88,76 @@ Console.WriteLine(cQueue.Peek());    // B
 | **İndeks İdarəsi** | `head`, `tail` lineer artır                  | `head`, `tail` `% capacity` ilə fırlanır      |
 | **Yaddaş istifadəsi** | Artıq boşluq qala bilər, `Shrink` istifadə edir | Yaddaş daha səmərəli istifadə olunur       |
 
+## 🔗 `CustomLinkedList<T>` 
+
+📁 **Fayl:** `LinkedList/CustomLinkedList.cs`
+
+### 🔍 Təsviri
+`CustomLinkedList<T>` sinfi, C# dilində özəl şəkildə tək istiqamətli (singly) bağlı siyahı (linked list) strukturunun implementasiyasıdır. Bu struktur istənilən tip (`T`) üzərində işləyir və `IEnumerable<T>` interfeysini dəstəklədiyi üçün `foreach` ilə iterasiya edilə bilir.
+
+---
+
+### 🧱 Daxili Quruluş
+Hər bir element `Node<T>` adlı nested siniflə təmsil olunur. Bu sinif aşağıdakı sahələrə malikdir:
+
+- `T Data` – Həmin node-un dəyəri
+- `Node<T> Next` – Növbəti node-a istinad
+
+```csharp
+public class Node<T>
+{
+    public T Data { get; set; }
+    public Node<T> Next { get; set; }
+
+    public Node(T data)
+    {
+        Data = data;
+    }
+}
+```
+### 🔧 Əsas Metodlar
+
+| Metod                      | Təsviri                                                                 |
+|----------------------------|-------------------------------------------------------------------------|
+| `AddFirst(T data)`         | Siyahının əvvəlinə yeni node əlavə edir                                 |
+| `AddLast(T data)`          | Siyahının sonuna yeni node əlavə edir                                  |
+| `AddLast(IEnumerable<T>)` | Bir neçə elementi ardıcıl şəkildə sona əlavə edir                       |
+| `AddMiddle(T data, int)`   | Verilmiş indeksə yeni node əlavə edir                                   |
+| `RemoveFirst()`            | Siyahının ilk elementini silir                                          |
+| `RemoveLast()`             | Siyahının son elementini silir                                          |
+| `RemoveWithValue(T val)`   | Verilən dəyərə uyğun ilk node-u tapıb silir                             |
+| `GetEnumerator()`          | `foreach` dövrü ilə siyahı üzərində iterasiya imkanı verir               |
+
+---
+
+### ✅ İstifadə nümunəsi
+
+```csharp
+var list = new CustomLinkedList<int>();
+
+list.AddFirst(10);
+list.AddLast(20);
+list.AddMiddle(15, 1);
+
+foreach (var item in list)
+{
+    Console.WriteLine(item); // 10, 15, 20
+}
+
+list.RemoveWithValue(15);
+list.RemoveLast();
+list.RemoveFirst();
+```
+### 🧠 Əlavə Qeydlər
+
+- `AddMiddle` metodu indeks `0` olduqda avtomatik olaraq `AddFirst()` metodunu çağırır.
+- `RemoveWithValue` yalnız **ilk uyğun dəyəri** silir, digər eyni dəyərlər qalır.
+- `RemoveLast()` metodu son elementi tapmaq üçün siyahını başdan sona qədər gəzir — bu da **O(n)** zaman mürəkkəbliyinə səbəb olur.
+- `IEnumerable<T>` interfeysinin implementasiyası sayəsində bu struktur `foreach` dövrü ilə rahat istifadə oluna bilir.
+## 📌 Yekun
+
+Bu layihə fundamental məlumat strukturlarının – `LinkedList`, `Queue` və `Stack` kimi nüvəsini təşkil edən strukturların – C# dilində sıfırdan necə qurulacağını nümayiş etdirir. Hər bir strukturun əsas funksionallıqları – əlavəetmə, silmə, iterasiya və yaddaş idarəsi – ətraflı şəkildə tətbiq edilmiş və kodun təmizliyi ön planda tutulmuşdur.
+
+Layihə həm öyrənmək istəyən yeni başlayanlar, həm də biliklərini praktika ilə möhkəmləndirmək istəyən inkişaf etdiricilər üçün nəzərdə tutulub. Kodlar genişlənə biləcək şəkildə dizayn edildiyi üçün istənilən funksionallıq asanlıqla əlavə oluna bilər.
+
+> Bu repository, məlumat strukturlarını dərindən başa düşmək və real dünyada istifadə edilən prinsipləri özündə əks etdirmək üçün etibarlı bir başlanğıc nöqtəsidir.
