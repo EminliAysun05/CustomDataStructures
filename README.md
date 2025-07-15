@@ -1,73 +1,90 @@
 # 📬 Queue Strukturları (FIFO) – `MyQueue<T>` və `CircularQueue<T>`
 
-Bu bölmədə iki növ Queue (növbə) strukturu təqdim olunur:
+Bu sənəddə iki fərqli Queue (növbə) strukturu izah olunur:
 
-1. `MyQueue<T>` – klassik lineer massiv əsaslı növbə
-2. `CircularQueue<T>` – dairəvi (circular buffer) əsaslı növbə
+1. `MyQueue<T>` – Klassik lineer massiv əsaslı növbə
+2. `CircularQueue<T>` – Dairəvi (circular buffer) əsaslı növbə
 
-Hər iki struktur FIFO (First-In, First-Out — İlk daxil olan, ilk çıxır) prinsipinə əsaslanır. Yəni əlavə olunan elementlər sırayla çıxarılır.
+Hər iki struktur FIFO (First-In, First-Out — İlk daxil olan, ilk çıxır) prinsipinə əsaslanır.
 
 ---
 
-## 1️⃣ `MyQueue<T>` – Klassik Növbə
+## 🔹 `MyQueue<T>` – Klassik Növbə
 
-**Fayl:** `StackQueue/MyQueue.cs`
+📁 **Fayl:** `StackQueue/MyQueue.cs`
 
-### 🔍 Qısa izah:
-`MyQueue<T>` sadə massiv üzərində qurulmuş növbə strukturudur. Yeni elementlər `tail` indeksindən əlavə olunur, silinmə isə `head` indeksindən həyata keçirilir.
+### 🔍 Təsviri
+`MyQueue<T>` sadə massiv üzərində qurulmuş Queue implementasiyasıdır. Yeni elementlər `tail` indeksinə əlavə olunur, `head` indeksindən isə çıxarılır. Əlavə olaraq, Queue-nin ölçüsü dolduqda avtomatik genişlənir (`Extend()`), və element sayı 1/4-dən az olduqda yaddaşa qənaət üçün ölçü azaldılır (`Shrink()`).
 
-### 🧠 İş prinsipi:
-- Əgər massiv doludursa, `Extend()` ilə ölçüsü artırılır.
-- Əgər element sayı 1/4 qədər azalıbsa, `Shrink()` ilə ölçü azaldılır.
-- Yaddaş istifadəsini balanslaşdırmaq üçün avtomatik genişlənmə və kiçilmə tətbiq edilir.
+### 🔧 Əsas metodlar
 
-### 🔧 Əsas metodlar:
+- `Enqueue(T item)` – Yeni element əlavə edir
+- `Dequeue()` – Ən əvvəlki elementi silir və qaytarır
+- `IsEmpty()` – Queue boş olub olmadığını yoxlayır
 
-| Metod         | Açıqlama                                               |
-|---------------|---------------------------------------------------------|
-| `Enqueue(T)`  | Yeni elementi növbənin sonuna əlavə edir                |
-| `Dequeue()`   | Növbənin əvvəlindəki elementi silir və qaytarır         |
-| `IsEmpty()`   | Növbənin boş olub olmadığını yoxlayır (`true/false`)    |
+### 🧠 İş prinsipi
 
-### 🧪 İstifadə nümunəsi:
+- **Genişlənmə:** Əgər Queue tam doludursa (`count == elements.Length`), `Extend()` metodu ilə ölçü ikiqat artırılır.
+- **Kiçilmə:** Əgər Queue 4-də 1 qədər boşdursa (`count == elements.Length / 4`), `Shrink()` metodu çağırılır.
+- `head` və `tail` indeksləri avtomatik köçürülür ki, elementlər ardıcıl qalsın.
+
+### ✅ İstifadə nümunəsi
 
 ```csharp
 var queue = new MyQueue<int>();
-queue.Enqueue(1);
-queue.Enqueue(2);
-Console.WriteLine(queue.Dequeue()); // 1
-Console.WriteLine(queue.Dequeue()); // 2
+queue.Enqueue(10);
+queue.Enqueue(20);
+Console.WriteLine(queue.Dequeue()); // 10
+Console.WriteLine(queue.Dequeue()); // 20
+```
+## 🔹 `CircularQueue<T>` – Dairəvi Növbə
 
-ℹ️ Əlavə Qeydlər:
-Extend() metodu köhnə massivdəki elementləri yeni və daha böyük massivə köçürür.
 
-Shrink() isə boşluq itkisinin qarşısını almaq üçün yaddaşı azaldır.
+📁 **Fayl:** `StackQueue/CircularQueue.cs`
 
-head və tail indeksləri sıralama pozulmasın deyə yenidən hesablanır.
-2️⃣ CircularQueue<T> – Dairəvi Növbə
-Fayl: StackQueue/CircularQueue.cs
+### 🔍 Təsviri
+`CircularQueue<T>` dairəvi tampon (circular buffer) əsaslı Queue strukturudur. `head` və `tail` indeksləri mod (`%`) operatoru ilə dairəvi şəkildə hərəkət edir. Bu sayədə boş sahələrdən səmərəli istifadə olunur və yaddaş itkisi minimuma endirilir.
 
-🔍 Qısa izah:
-CircularQueue<T> — dairəvi tampon (circular buffer) üzərində qurulmuş növbə strukturudur. Əlavə və silmə əməliyyatlarında mod (%) operatorundan istifadə edilir ki, indekslər 0–N aralığında qalsın və təkrarlana bilsin.
+### 🔧 Əsas metodlar
 
-🧠 İş prinsipi:
-tail indeksinə yeni element yazılır, sonra (tail + 1) % capacity ilə bükülür.
-
-head indeksindən element çıxarılır, (head + 1) % capacity ilə yenilənir.
-
-Əgər massiv dolu olarsa, Extend() ilə ölçü artırılır və bütün elementlər yeni massivə düzgün sıra ilə köçürülür.
-🔧 Əsas metodlar:
 | Metod         | Açıqlama                                               |
 |---------------|---------------------------------------------------------|
-| `Enqueue(T)`  | Yeni elementi növbənin sonuna əlavə edir                |
-| `Dequeue()`   | Növbənin əvvəlindəki elementi silir və qaytarır         |
-| `Peek()`   | Ən əvvəlki elementi silmədən qaytarır    |
+| `Enqueue(T)`  | Yeni elementi `tail` indeksinə əlavə edir              |
+| `Dequeue()`   | `head` indeksindəki elementi silir və qaytarır         |
+| `Peek()`      | `head`-dəki elementi silmədən qaytarır                 |
+| `IsEmpty()`   | Queue boş olub olmadığını yoxlayır (`true` / `false`)  |
 
-### 🧪 İstifadə nümunəsi:
+### 🧠 İş prinsipi
+
+- **Dairəvi artım:**  
+  `tail = (tail + 1) % capacity`  
+  `head = (head + 1) % capacity`
+
+- **Genişlənmə:**  
+  Əgər Queue tam doludursa (`count == capacity`), `Extend()` metodu çağırılır.  
+  Bu zaman `head`-dən başlayaraq elementlər yeni massivə köçürülür və indekslər sıfırlanır.
+
+- **Yaddaş idarəsi:**  
+  Circular yanaşma sayəsində massivdəki boşluqlardan səmərəli istifadə olunur.  
+  `Shrink()` metoduna ehtiyac qalmır.
+
+### ✅ İstifadə nümunəsi
+
 ```csharp
 var cQueue = new CircularQueue<string>();
 cQueue.Enqueue("A");
 cQueue.Enqueue("B");
+
 Console.WriteLine(cQueue.Peek());    // A
 Console.WriteLine(cQueue.Dequeue()); // A
 Console.WriteLine(cQueue.Peek());    // B
+```
+## ⚖️ `MyQueue<T>` vs `CircularQueue<T>` – Müqayisəli Cədvəl
+
+| Xüsusiyyət         | `MyQueue<T>`                                | `CircularQueue<T>`                           |
+|--------------------|----------------------------------------------|-----------------------------------------------|
+| **Struktur**       | Sadə lineer massiv                           | Circular (dairəvi) massiv                     |
+| **Genişlənmə**     | `Extend()` və `Shrink()` ilə                 | `Extend()` ilə dairəvi indekslə               |
+| **İndeks İdarəsi** | `head`, `tail` lineer artır                  | `head`, `tail` `% capacity` ilə fırlanır      |
+| **Yaddaş istifadəsi** | Artıq boşluq qala bilər, `Shrink` istifadə edir | Yaddaş daha səmərəli istifadə olunur       |
+
