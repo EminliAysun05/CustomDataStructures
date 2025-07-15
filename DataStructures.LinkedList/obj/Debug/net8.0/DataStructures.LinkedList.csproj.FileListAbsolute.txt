@@ -1,0 +1,15 @@
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\bin\Debug\net8.0\DataStructures.LinkedList.exe
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\bin\Debug\net8.0\DataStructures.LinkedList.deps.json
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\bin\Debug\net8.0\DataStructures.LinkedList.runtimeconfig.json
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\bin\Debug\net8.0\DataStructures.LinkedList.dll
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\bin\Debug\net8.0\DataStructures.LinkedList.pdb
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.AssemblyInfoInputs.cache
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.AssemblyInfo.cs
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.csproj.CoreCompileInputs.cache
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.sourcelink.json
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.dll
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\refint\DataStructures.LinkedList.dll
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.pdb
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\DataStructures.LinkedList.genruntimeconfig.cache
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.LinkedList\obj\Debug\net8.0\ref\DataStructures.LinkedList.dll

@@ -1,0 +1,15 @@
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\bin\Debug\net8.0\DataStructures.StackQueue.exe
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\bin\Debug\net8.0\DataStructures.StackQueue.deps.json
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\bin\Debug\net8.0\DataStructures.StackQueue.runtimeconfig.json
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\bin\Debug\net8.0\DataStructures.StackQueue.dll
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\bin\Debug\net8.0\DataStructures.StackQueue.pdb
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.AssemblyInfoInputs.cache
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.AssemblyInfo.cs
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.csproj.CoreCompileInputs.cache
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.sourcelink.json
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.dll
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\refint\DataStructures.StackQueue.dll
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.pdb
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\DataStructures.StackQueue.genruntimeconfig.cache
+C:\Users\namjoon\source\repos\DataStructures.StackQueue\DataStructures.StackQueue\obj\Debug\net8.0\ref\DataStructures.StackQueue.dll
