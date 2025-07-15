@@ -50,6 +50,47 @@
 
             //Console.ReadKey();
 
+            //var queue1 = new CircularQueue<string>();
+            //queue1.Enqueue("A");
+            //queue1.Enqueue("B");
+            //Console.WriteLine(queue1.Peek());
+            #endregion
+
+            #region Stack
+            //var stack = new MyStack<string>();
+
+            //Console.WriteLine("Stack boşdurmu? " + stack.IsEmpty()); // True
+
+            //Console.WriteLine("\n 3 element elave olunur...");
+            //stack.Push("A");
+            //stack.Push("B");
+            //stack.Push("C");
+
+            //Console.Write("Peek (sonuncu element): ");
+            //stack.Peek(); // C
+
+            //Console.WriteLine("Stack boşdurmu? " + stack.IsEmpty()); // False
+
+            //Console.WriteLine("\n Elementler bir-bir çıxarılır:");
+            //Console.WriteLine("Pop: " + stack.Pop()); // C
+            //Console.WriteLine("Pop: " + stack.Pop()); // B
+
+            //Console.Write("Peek: ");
+            //stack.Peek(); // A
+
+            //Console.WriteLine("Pop: " + stack.Pop()); // A
+
+            //Console.WriteLine("\nStack boşdurmu? " + stack.IsEmpty()); // True
+
+            //try
+            //{
+            //    Console.WriteLine("\n Boş stack üzerinde Pop test edilir:");
+            //    stack.Pop(); // throw exception
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("Error: " + ex.Message);
+            //}
             #endregion
 
         }
@@ -87,6 +128,7 @@
 
         //    Console.WriteLine("]");
         //}
+
         #endregion
     }
 }

@@ -69,4 +69,9 @@ public class CircularQueue<T>
             throw new InvalidOperationException("Queue is empty");
         }
     }
+    public T Peek()
+    {
+        ThrowIfEmpty();
+        return elements[head];
+    }
 }

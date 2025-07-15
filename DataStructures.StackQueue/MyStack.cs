@@ -62,4 +62,10 @@ public class MyStack<T> //LIFO - last in first out
         elements = newArray;
         
     }
+
+    public void Peek()
+    {
+        ThrowIfEmpty();
+        Console.WriteLine(elements[top]);
+    }
 }

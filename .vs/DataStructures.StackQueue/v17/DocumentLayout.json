@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.stackqueue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|solutionrelative:datastructures.stackqueue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.stackqueue\\mystack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|solutionrelative:datastructures.stackqueue\\mystack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.stackqueue\\circularqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|solutionrelative:datastructures.stackqueue\\circularqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.stackqueue\\myqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|solutionrelative:datastructures.stackqueue\\myqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B654A1C3-6DD3-49E6-A9F2-70E241E61FC4}|DataStructures.LinkedList\\DataStructures.LinkedList.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.linkedlist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,18 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B654A1C3-6DD3-49E6-A9F2-70E241E61FC4}|DataStructures.LinkedList\\DataStructures.LinkedList.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.linkedlist\\customlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B654A1C3-6DD3-49E6-A9F2-70E241E61FC4}|DataStructures.LinkedList\\DataStructures.LinkedList.csproj|solutionrelative:datastructures.linkedlist\\customlinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.stackqueue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|solutionrelative:datastructures.stackqueue\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.stackqueue\\myqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|solutionrelative:datastructures.stackqueue\\myqueue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|c:\\users\\namjoon\\source\\repos\\datastructures.stackqueue\\datastructures.stackqueue\\mystack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CA4AA238-8794-442F-B3C7-4DBBC9F5C3BE}|DataStructures.StackQueue\\DataStructures.StackQueue.csproj|solutionrelative:datastructures.stackqueue\\mystack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,6 +51,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MyStack.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyStack.cs",
+              "RelativeDocumentMoniker": "DataStructures.StackQueue\\MyStack.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyStack.cs",
+              "RelativeToolTip": "DataStructures.StackQueue\\MyStack.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA6wDQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T06:04:42.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MyQueue.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyQueue.cs",
+              "RelativeDocumentMoniker": "DataStructures.StackQueue\\MyQueue.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyQueue.cs",
+              "RelativeToolTip": "DataStructures.StackQueue\\MyQueue.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T12:22:52.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CircularQueue.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\CircularQueue.cs",
+              "RelativeDocumentMoniker": "DataStructures.StackQueue\\CircularQueue.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\CircularQueue.cs",
+              "RelativeToolTip": "DataStructures.StackQueue\\CircularQueue.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswEsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T06:22:31.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\Program.cs",
+              "RelativeDocumentMoniker": "DataStructures.StackQueue\\Program.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\Program.cs",
+              "RelativeToolTip": "DataStructures.StackQueue\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T12:22:29.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.LinkedList\\Program.cs",
               "RelativeDocumentMoniker": "DataStructures.LinkedList\\Program.cs",
@@ -58,25 +109,11 @@
               "RelativeToolTip": "DataStructures.LinkedList\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T06:22:37.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T06:22:37.61Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CircularQueue.cs",
-              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\CircularQueue.cs",
-              "RelativeDocumentMoniker": "DataStructures.StackQueue\\CircularQueue.cs",
-              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\CircularQueue.cs",
-              "RelativeToolTip": "DataStructures.StackQueue\\CircularQueue.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwCEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T06:22:31.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CustomLinkedList.cs",
               "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.LinkedList\\CustomLinkedList.cs",
               "RelativeDocumentMoniker": "DataStructures.LinkedList\\CustomLinkedList.cs",
@@ -84,45 +121,7 @@
               "RelativeToolTip": "DataStructures.LinkedList\\CustomLinkedList.cs",
               "ViewState": "AgIAAHgAAAAAAAAAAAAIwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-15T06:23:33.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MyQueue.cs",
-              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyQueue.cs",
-              "RelativeDocumentMoniker": "DataStructures.StackQueue\\MyQueue.cs",
-              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyQueue.cs",
-              "RelativeToolTip": "DataStructures.StackQueue\\MyQueue.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T12:22:52.897Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MyStack.cs",
-              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyStack.cs",
-              "RelativeDocumentMoniker": "DataStructures.StackQueue\\MyStack.cs",
-              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\MyStack.cs",
-              "RelativeToolTip": "DataStructures.StackQueue\\MyStack.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAkwCAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-14T06:04:42.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\Program.cs",
-              "RelativeDocumentMoniker": "DataStructures.StackQueue\\Program.cs",
-              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\DataStructures.StackQueue\\DataStructures.StackQueue\\Program.cs",
-              "RelativeToolTip": "DataStructures.StackQueue\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T12:22:29.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-15T06:23:33.177Z"
             }
           ]
         },
