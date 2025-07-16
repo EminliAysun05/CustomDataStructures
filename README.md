@@ -209,4 +209,13 @@ Layihə həm öyrənmək istəyən yeni başlayanlar, həm də biliklərini prak
 
 ## 📄 Lisenziya
 Bu layihə açıq mənbəlidir və istənilən məqsədlə istifadə edilə bilər.
+---
 
+## 👤 Müəllif
+
+**Aysun E.**  
+🎓 AzInTelecom təcrübə proqramı taskı çərçivəsində hazırlanmışdır 
+📅 2025  
+🌐 GitHub: [EminliAysun05](https://github.com/EminliAysun05)
+
+---
