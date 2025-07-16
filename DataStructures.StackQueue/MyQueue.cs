@@ -16,9 +16,9 @@ public class MyQueue<T> //fifo - first in first out
 
     public void Enqueue(T item)
     {
-        if(count == elements.Length) //doldurubsa
+        if(count == elements.Length) //dolubsa
         {
-            Extend(); //boyutlandiriram
+            Extend(); //genislendirirem
         }
 
         tail++;

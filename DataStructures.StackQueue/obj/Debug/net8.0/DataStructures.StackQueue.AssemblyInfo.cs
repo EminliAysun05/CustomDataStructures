@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DataStructures.StackQueue")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b51b66709dfdc4b40a8b7219fcf169f064cd8eab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e674c79e5dab7a0ae356aa2f162db2b2bb6f059")]
 [assembly: System.Reflection.AssemblyProductAttribute("DataStructures.StackQueue")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DataStructures.StackQueue")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

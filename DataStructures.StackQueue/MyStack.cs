@@ -13,9 +13,9 @@ public class MyStack<T> //LIFO - last in first out
 
     public void Push(T item)
     {
-        if (top == elements.Length - 1) //doldurubsa
+        if (top == elements.Length - 1) //dolubsa
         {
-            Extend(); //boyutlandiriram
+            Extend(); //genislendirirem
         }
 
         top++;
@@ -32,7 +32,7 @@ public class MyStack<T> //LIFO - last in first out
     public T Pop()
     {
         ThrowIfEmpty();
-        if (top>0 && top == elements.Length / 4) //4de birine qeder dusubse,(dordde biri qalibsa) shrink edecem
+        if (top>0 && top == elements.Length / 4) //4de birine qeder dusubse,(dordde biri qalibsa) shrink(olcunu azaldiram) edecem
         {
             Shrink();
         }
@@ -41,6 +41,11 @@ public class MyStack<T> //LIFO - last in first out
         elements[top--] = default; //0, o top'u silirem
 
         return item;
+    }
+    public void Peek()
+    {
+        ThrowIfEmpty();
+        Console.WriteLine(elements[top]);
     }
     private void ThrowIfEmpty()
     {
@@ -63,9 +68,5 @@ public class MyStack<T> //LIFO - last in first out
         
     }
 
-    public void Peek()
-    {
-        ThrowIfEmpty();
-        Console.WriteLine(elements[top]);
-    }
+  
 }

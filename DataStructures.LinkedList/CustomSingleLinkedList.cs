@@ -2,7 +2,7 @@
 
 namespace DataStructures.LinkedList;
 
-public class CustomLinkedList<T> : IEnumerable<T>
+public class CustomSingleLinkedList<T> : IEnumerable<T>
 {
     public Node<T> Head { get; private set; }
     public Node<T> Tail { get; private set; }
@@ -43,7 +43,7 @@ public class CustomLinkedList<T> : IEnumerable<T>
         }
     }
 
-    public void AddMiddle(T data, int index)
+    public void AddMiddle(T data, int index) 
     {
         if (index < 0 || (Head == null && index > 0))
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -56,7 +56,7 @@ public class CustomLinkedList<T> : IEnumerable<T>
 
         var newNode = new Node<T>(data);
         var current = Head;
-        for (int i = 0; i < index - 1 && current != null; i++)
+        for (int i = 0; i < index - 1 && current != null; i++)//index-1'i tapib, onun nextine yerlesdirirem
         {
             current = current.Next;
         }
@@ -84,20 +84,20 @@ public class CustomLinkedList<T> : IEnumerable<T>
 
     public void RemoveLast()
     {
-        if (Head == null)
+        if (Head == null) //siyahi bosdursa
             return;
 
         if (Tail == null)
             throw new InvalidOperationException("List is empty.");
 
-        if (Head == Tail)
+        if (Head == Tail) //siyahida yalniz bir element varsa
         {
             Head = Tail = null;
             return;
         }
 
         var previous = Head;
-        while (previous.Next != Tail)
+        while (previous.Next != Tail) //tail'e qeder gedir, sonuncunu null edir
         {
             previous = previous.Next;
         }
@@ -111,14 +111,14 @@ public class CustomLinkedList<T> : IEnumerable<T>
         if (Head == null)
             return;
 
-        if (EqualityComparer<T>.Default.Equals(Head.Data, value))
+        if (EqualityComparer<T>.Default.Equals(Head.Data, value))//silinecek data birinci node'dadirsa, removefirstle silir
         {
             RemoveFirst();
             return;
         }
 
         Node<T> current = Head;
-        while (current.Next != null && !EqualityComparer<T>.Default.Equals(current.Next.Data, value))
+        while (current.Next != null && !EqualityComparer<T>.Default.Equals(current.Next.Data, value))//tapana qeder gedir
         {
             current = current.Next;
         }
