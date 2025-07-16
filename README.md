@@ -154,6 +154,51 @@ list.RemoveFirst();
 - `RemoveWithValue` yalnız **ilk uyğun dəyəri** silir, digər eyni dəyərlər qalır.
 - `RemoveLast()` metodu son elementi tapmaq üçün siyahını başdan sona qədər gəzir — bu da **O(n)** zaman mürəkkəbliyinə səbəb olur.
 - `IEnumerable<T>` interfeysinin implementasiyası sayəsində bu struktur `foreach` dövrü ilə rahat istifadə oluna bilir.
+
+  
+# CustomDoubleLinkedList<T>
+ C# dilində generic tip dəstəyi ilə yazılmış özəl **iki tərəfli zəncirvari siyahı (doubly linked list)** strukturunun implementasiyasıdır.
+
+---
+
+## ✅ Xüsusiyyətlər
+
+- `Generic` tip dəstəyi (`T`)
+- Siyahının əvvəlinə və sonuna element əlavə etmək imkanı
+- Verilən dəyərə əsasən silmə funksiyası
+- Siyahının əvvəlindən və sonundan element silmək imkanı
+- Bütün siyahını `Clear()` metodu ilə sıfırlamaq
+- `Find()` metodu ilə istənilən elementi tapmaq
+- `foreach` dövrü ilə iterasiya (çünki `IEnumerable<T>` interfeysi implementasiya olunub)
+- Element sayını `Count` property-si ilə əldə etmək
+
+---
+
+## 🧩 İctimai Metodlar
+
+| Metod              | Açıqlama                                           |
+|--------------------|----------------------------------------------------|
+| `AddFirst(T value)`| Siyahının əvvəlinə element əlavə edir              |
+| `AddLast(T value)` | Siyahının sonuna element əlavə edir                |
+| `RemoveFirst()`    | Siyahının əvvəlindəki elementi silir               |
+| `RemoveLast()`     | Siyahının sonundakı elementi silir                 |
+| `Remove(T value)`  | Verilən dəyərə uyğun ilk elementi silir            |
+| `Find(T value)`    | Verilən dəyəri saxlayan node-u qaytarır           |
+| `Clear()`          | Siyahını tamamilə təmizləyir                       |
+| `Count`            | Siyahıdakı elementlərin ümumi sayını göstərir      |
+
+---
+
+## 🧱 Node Strukturu
+
+Hər bir node aşağıdakı məlumatları saxlayır:
+
+- `Value` – Dəyər
+- `Previous` – Əvvəlki node-a istinad
+- `Next` – Növbəti node-a istinad
+
+---
+
 ## 📌 Yekun
 
 Bu layihə fundamental məlumat strukturlarının – `LinkedList`, `Queue` və `Stack` kimi nüvəsini təşkil edən strukturların – C# dilində sıfırdan necə qurulacağını nümayiş etdirir. Hər bir strukturun əsas funksionallıqları – əlavəetmə, silmə, iterasiya və yaddaş idarəsi – ətraflı şəkildə tətbiq edilmiş və kodun təmizliyi ön planda tutulmuşdur.
@@ -161,3 +206,7 @@ Bu layihə fundamental məlumat strukturlarının – `LinkedList`, `Queue` və 
 Layihə həm öyrənmək istəyən yeni başlayanlar, həm də biliklərini praktika ilə möhkəmləndirmək istəyən inkişaf etdiricilər üçün nəzərdə tutulub. Kodlar genişlənə biləcək şəkildə dizayn edildiyi üçün istənilən funksionallıq asanlıqla əlavə oluna bilər.
 
 > Bu repository, məlumat strukturlarını dərindən başa düşmək və real dünyada istifadə edilən prinsipləri özündə əks etdirmək üçün etibarlı bir başlanğıc nöqtəsidir.
+
+## 📄 Lisenziya
+Bu layihə açıq mənbəlidir və istənilən məqsədlə istifadə edilə bilər.
+
