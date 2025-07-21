@@ -31,7 +31,7 @@ public class MyQueue<T> //fifo - first in first out
         ThrowIfEmpty();
 
         T item = elements[head]; //ilk giren birinci cixir
-        elements[head] = default; //0, o head'i silirem
+        elements[head] = default!; //0, o head'i silirem
         head++;
         count--;
 
@@ -57,9 +57,11 @@ public class MyQueue<T> //fifo - first in first out
 
     private void Extend() //old->1 2 3   new->1 2 3 0 0 0
     {
-        Array.Resize(ref elements, elements.Length * 2);
+        var newArray = new T[elements.Length * 2];
+        Array.Copy(elements, head, newArray, 0, count);
+        elements = newArray;
         head = 0;
-        tail = count - 1; //tail'i sonuncu elemente set edirem
+        tail = count - 1;
     }
 
     private void Shrink() //1 2 3 0 0 0 azalirsa qabaqdan sile sile gliersen

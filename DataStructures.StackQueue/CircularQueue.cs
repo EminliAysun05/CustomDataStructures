@@ -18,14 +18,19 @@ public class CircularQueue<T>
 
     public void Enqueue(T item)
     {
-        if (count == capacity)
+        var newCapacity = capacity * 2;
+        var newArray = new T[newCapacity];
+
+        for (int i = 0; i < count; i++)
         {
-            Extend();
+            newArray[i] = elements[(head + i) % capacity];
         }
 
-        elements[tail] = item;
-        tail = (tail + 1) % capacity; // circular increment
-        count++;
+        elements = newArray;
+        capacity = newCapacity;
+        head = 0;
+        tail = count;
+
     }
 
     private void Extend()
@@ -50,7 +55,7 @@ public class CircularQueue<T>
         ThrowIfEmpty();
         T item = elements[head];
 
-        elements[head] = default;
+        elements[head] = default!;
         head = (head + 1) % capacity; // circular increment
         count--;
 
